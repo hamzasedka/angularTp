@@ -1,0 +1,7 @@
+<h3> moyenne des enfants {{moyene}}</h3>
+<app-fils 
+*ngFor="let enfant of enfants"
+[nom]="enfant" 
+(message)="compteAVG($event)">
+
+</app-fils>
