@@ -1,0 +1,20 @@
+<form [formGroup]="From">
+    <div  class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" formControlName="name">
+      <p    *ngIf="From.get('name').errors.required == true">please enter your name</p>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">LastName</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="lastname"  formControlName="lastname" >
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control"  placeholder="Email" formControlName="email">
+      </div>
+       <div class="form-group">
+        <label for="exampleInputPassword1">ImgUrl</label>
+        <input type="text" class="form-control" id="exampleInputPassword1"  formControlName="imgUrl">
+      </div>
+    <button type="button" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  </form>

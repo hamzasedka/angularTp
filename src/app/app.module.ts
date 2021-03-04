@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PereComponent } from './pere/pere.component';
 import { FilsComponent } from './pere/fils/fils.component';
+import { StudentComponent } from './student/student.component';
+import { AddPageComponent } from './add-page/add-page.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,15 @@ import { FilsComponent } from './pere/fils/fils.component';
     NavbarComponent,
     FooterComponent,
     PereComponent,
-    FilsComponent
+    FilsComponent,
+    StudentComponent,
+    AddPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

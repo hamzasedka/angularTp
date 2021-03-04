@@ -1,0 +1,11 @@
+<div *ngFor="let student of students" style="float: left; margin: 10px;">
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{student.imgUrl}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{student.name}}  {{student.lastname}}</h5>
+      <p class="card-text">{{student.email}}</p>
+      <a href="#"  [ngStyle]="{'background-color':student.name === 'hamza' ? 'red' : 'green'}" [ngClass]="{'btn btn-dark':true}">Go somewhere</a>
+    </div>
+  </div>
+</div>
